@@ -15,13 +15,15 @@ Content-Type: application/json
   "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
 }
 ###
-PATCH  http://localhost:5000/products/5
+PATCH  http://localhost:5000/products/3
 Content-Type: application/json
 
 {
   "name": "modificado",
   "discountPercentage": 0,
-  "weight": 1000,
+  "weight": 1200,
   "category": "verduras",
   "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
 }
+###
+DELETE http://localhost:5000/products/4

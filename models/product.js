@@ -1,8 +1,6 @@
 import { readJSON } from "../utils.js";
 import {randomUUID} from "node:crypto";
 
-
-
 const products = readJSON("./data.json");
 
 export class ProductModel {
@@ -24,7 +22,7 @@ export class ProductModel {
   return newProduct
   }
   static async delete ({id}){
-    const productIndex= products.findIndex((product) => product.id === id);
+    const productIndex= products.findIndex((product) => product.id == id);
     if(productIndex === -1){
         return false;
     }
