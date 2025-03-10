@@ -1,0 +1,5 @@
+el post en el controller de producto es el encargado de procesar
+los descuentos que se cargar manualmente y verificar su congruencia
+si bien en el post lo puedo verificar en el controller, en el update
+si lo hago desde el modelo me ahorro una peticio pero queda inconsistente
+la estructura

@@ -1,16 +1,5 @@
 [
   {
-    "id": 3,
-    "name": "Akusay",
-    "price": 3000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 1000,
-    "category": "verduras",
-    "available": true,
-    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
-  },
-  {
     "id": 4,
     "name": "Arveja con vainea",
     "price": 3000,
@@ -77,35 +66,36 @@
   },
   {
     "id": 11,
-    "name": "Choclo",
+    "name": "modificado",
     "price": 2000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 1000,
+    "promoPrice": null,
+    "discountPercentage": 10,
+    "weight": 1200,
     "category": "verduras",
     "available": true,
-    "img": "https://images.pexels.com/photos/26698406/pexels-photo-26698406/free-photo-of-sano-amarillo-maiz-brillante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
   },
   {
     "id": 12,
-    "name": "Cilantro",
+    "name": "modificado",
     "price": 1500,
-    "promoPrice": 0,
-    "discountPercentage": 0,
+    "promoPrice": 10,
+    "discountPercentage": null,
     "category": "verduras",
     "available": true,
-    "img": "https://images.pexels.com/photos/3338495/pexels-photo-3338495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg",
+    "weight": 1200
   },
   {
     "id": 13,
-    "name": "Coliflor",
+    "name": "modificado",
     "price": 5000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 2000,
+    "promoPrice": 10,
+    "discountPercentage": null,
+    "weight": 1200,
     "category": "verduras",
     "available": true,
-    "img": "https://images.pexels.com/photos/4963827/pexels-photo-4963827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
   },
   {
     "id": 14,
@@ -196,34 +186,36 @@
   },
   {
     "id": 22,
-    "name": "Puerro+verdeo",
+    "name": "modificado",
     "price": 5000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 500,
+    "promoPrice": 10,
+    "discountPercentage": null,
+    "weight": 1200,
     "category": "verduras",
     "available": false,
-    "img": "https://www.caserissimo.com/img/ingredientes/puerro.jpg"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
   },
   {
     "id": 23,
-    "name": "Radicheta",
+    "name": "modificado",
     "price": 2500,
-    "promoPrice": 0,
+    "promoPrice": 10,
     "discountPercentage": 0,
     "category": "verduras",
     "available": true,
-    "img": "https://www.caserissimo.com/img/ingredientes/radicchio.jpg"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg",
+    "weight": 1200
   },
   {
     "id": 24,
-    "name": "Remolacha",
-    "price": 4000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
+    "name": "modificado",
+    "price": 10,
+    "promoPrice": 9,
+    "discountPercentage": 9.999999999999998,
     "category": "verduras",
     "available": true,
-    "img": "https://www.caserissimo.com/img/ingredientes/remolacha.jpg"
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg",
+    "weight": 1200
   },
   {
     "id": 25,
@@ -857,14 +849,80 @@
     "img": "https://www.caserissimo.com/img/ingredientes/zapallo-anco.jpg"
   },
   {
-    "id": 84,
-    "name": "Pere",
-    "price": 2222,
+    "id": "a28dfe52-9c3c-4b9a-b1dd-98f98d713b5b",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 10,
+    "discountPercentage": 0,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "12d54dc1-a06f-4f8d-bd1d-c2da32f6d7b3",
+    "name": "boniato espacial",
+    "price": 3000,
     "promoPrice": 0,
     "discountPercentage": 0,
-    "weight": 222,
-    "category": "mayorista",
+    "weight": 1000,
+    "category": "verduras",
     "available": true,
-    "img": ""
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "e47b0f69-63c4-4450-81a9-046709c2cce9",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 2700,
+    "discountPercentage": 10,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "a7297688-23fc-427b-8093-3373c20fd4ed",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 100,
+    "discountPercentage": 96.66666666666667,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "07664c6e-3ecd-4d89-b21d-2b12f848de09",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1000,
+    "discountPercentage": 66.66666666666667,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "9a5b4260-32f0-49dd-aeaa-08a2f21c1565",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "bd5da063-0652-4107-beb0-33fdaaf0e2b3",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
   }
 ]
