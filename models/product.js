@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { validateDiscount, calculateDiscount } from "../utils.js";
 // Ruta al archivo JSON
-const dataPath = path.join(process.cwd(), "data.json");
+const dataPath = path.join(process.cwd(), "./db/data.json");
 
 // Función para leer los productos desde el archivo JSON
 async function loadProducts() {
