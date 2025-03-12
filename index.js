@@ -3,6 +3,7 @@ import cors from "cors";
 import { productsRouter } from "./routes/products.js";
 import { userRouter } from "./routes/user.js";
 import dotenv from "dotenv";
+import { errorHandler } from "./middleware/errorHandler.js";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use("/products", productsRouter);
 app.use("/user", userRouter);
 
+app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
