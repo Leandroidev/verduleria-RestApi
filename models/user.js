@@ -1,51 +1,87 @@
 import { randomUUID } from "node:crypto";
-import fs from "node:fs/promises";
-import path from "node:path";
-import bcryt from "bcrypt";
+import { load, save } from "../db/dbConnection.js";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import {
+  UnauthorizedError,
+  ValidationError,
+  NotFoundError,
+} from "../Errors/error.js";
 // Ruta al archivo JSON
-const dataPath = path.join(process.cwd(), "./db/user.json");
 
-async function loadUser() {
-  try {
-    const data = await fs.readFile(dataPath, "utf-8");
-    return JSON.parse(data);
-  } catch (error) {
-    console.error("Error al leer el archivo JSON:", error.message);
-    return [];
-  }
-}
-async function saveUser(user) {
-  try {
-    await fs.writeFile(dataPath, JSON.stringify(user, null, 2), "utf-8");
-  } catch (error) {
-    console.error("Error al escribir en el archivo JSON:", error.message);
-  }
-}
 export class UserModel {
+  static async getUsers() {
+    const users = await load("user");
+    const filteredUsers = users.map(({ id, userName }) => ({ id, userName }));
+
+    return filteredUsers;
+  }
   static async create({ input }) {
-    const hashedUserName = await bcryt.hash(input.userName, 10);
-    const hashedPassword = await bcryt.hash(input.password, 10);
+    // Validar que el usuario no exista previamente
+    const users = await load("user");
+
+    for (const user of users) {
+      const userExists = await users.find(
+        (user) => user.userName === input.userName
+      );
+      if (userExists) {
+        throw new ValidationError("User alredy exist", 409);
+      }
+    }
+    // Hashear el nombre de usuario y la contraseña
+    const hashedPassword = await bcrypt.hash(input.password, 10);
+
+    // Crear el nuevo usuario
     const newUser = {
       id: randomUUID(),
-      userName: hashedUserName,
+      userName: input.userName,
       password: hashedPassword,
     };
-    //hashear el password y el username y comprararlo con el json de usuarios
-    await saveUser(newUser);
+    users.push(newUser);
+
+    await save("user", users);
+
+    // Guardar el usuario en la base de datos
+
     return newUser.id;
+  }
+
+  static async delete({ id }) {
+    const users = await load("user");
+    const userIndex = users.findIndex((user) => user.id === id);
+    if (userIndex === -1) {
+      throw new NotFoundError("User not found");
+    }
+    const deletedUser = {
+      id: users[userIndex].id,
+      userName: users[userIndex].userName,
+    };
+    users.splice(userIndex, 1);
+    await save("user", users);
+    return deletedUser;
   }
   static async logIn({ input }) {
     //hashear el password y el username y comprararlo con el json de usuarios
-    const user = await loadUser();
-    const isValidUser = await bcryt.compare(input.userName, user.userName);
-    const isValidPassword = await bcryt.compare(input.password, user.password);
-    if (isValidUser && isValidPassword) {
-      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-        expiresIn: "1h", // El token expira en 1 hora
-      });
+    const users = await load("user");
+    for (const user of users) {
+      const userExists = await users.find(
+        (user) => user.userName === input.userName
+      );
+      if (!userExists) {
+        throw new UnauthorizedError("Invalid username or password", 401);
+      }
+      const isValidPassword = await bcrypt.compare(
+        input.password,
+        user.password
+      );
+      if (!isValidPassword) {
+        throw new UnauthorizedError("Invalid username or password", 401);
+      }
+      const token = jwt.sign(
+        { userId: user.id, userName: input.userName },
+        process.env.JWT_SECRET
+      );
       return token;
     }
-    return false;
   }
 }

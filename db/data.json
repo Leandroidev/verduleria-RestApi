@@ -1,26 +1,5 @@
 [
   {
-    "id": 4,
-    "name": "Arveja con vainea",
-    "price": 3000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 1000,
-    "category": "verduras",
-    "available": true,
-    "img": "https://images.pexels.com/photos/768090/pexels-photo-768090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    "id": 5,
-    "name": "Apio",
-    "price": 2000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "category": "verduras",
-    "available": true,
-    "img": "https://image.tuasaude.com/img/ingredientes/apio.jpg"
-  },
-  {
     "id": 6,
     "name": "Batata",
     "price": 3000,
@@ -986,6 +965,94 @@
     "price": 3000,
     "promoPrice": 1500,
     "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "a90f716e-582d-482c-92cc-b2ae4a718d68",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "90516891-f8b4-4507-8c9f-9af5f34070d0",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "5223156a-1b33-46fd-b170-8118241a3ac3",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "73821663-ea73-4ad6-8bf5-0c8206a40d42",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "448cca8e-b921-4fd4-bc4d-bc058f7cd1d2",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "1ba9908c-6e78-4a93-b525-802c5ba54c17",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "3ac2bf12-75d6-4a43-ac0f-2b032b2460e1",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 1500,
+    "discountPercentage": 50,
+    "weight": 1000,
+    "category": "verduras",
+    "available": true,
+    "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
+  },
+  {
+    "id": "271e8fa7-6d1e-4355-b8d5-5cb6298a7a6f",
+    "name": "boniato espacial",
+    "price": 3000,
+    "promoPrice": 2850,
+    "discountPercentage": 5,
     "weight": 1000,
     "category": "verduras",
     "available": true,

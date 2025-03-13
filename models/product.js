@@ -4,11 +4,11 @@ import { NotFoundError, ValidationError } from "../Errors/error.js";
 import { load, save } from "../db/dbConnection.js";
 export class ProductModel {
   static async getAll() {
-    const products = await load();
+    const products = await load("data");
     return products;
   }
   static async create({ input }) {
-    const products = await loadProducts();
+    const products = await load("data");
     const newProduct = {
       id: randomUUID(),
       ...input,
@@ -19,26 +19,26 @@ export class ProductModel {
     calculateDiscount(newProduct);
 
     products.push(newProduct);
-    await saveProducts(products);
+    await save("data", products);
     return newProduct;
   }
   static async delete({ id }) {
-    const products = await loadProducts();
+    const products = await load("data");
     const productIndex = products.findIndex((product) => product.id == id);
     if (productIndex === -1) {
-      throw new NotFoundError("Product not found");
+      throw new NotFoundError("Product not found", 404);
     }
     const deletedProduct = products[productIndex];
     products.splice(productIndex, 1);
-    await saveProducts(products);
+    await save("data", products);
     return deletedProduct;
   }
   static async update({ id, input }) {
-    const products = await loadProducts();
+    const products = await load("data");
 
     const productIndex = products.findIndex((product) => product.id == id);
     if (productIndex === -1) {
-      throw new NotFoundError("Product not found");
+      throw new NotFoundError("Product not found", 404);
     }
 
     const updatedProduct = {
@@ -52,7 +52,7 @@ export class ProductModel {
 
     products[productIndex] = updatedProduct;
 
-    await saveProducts(products);
+    await save("data", products);
     return updatedProduct;
   }
 }

@@ -1,6 +1,9 @@
 import { Router } from "express";
 import { UserController } from "../controllers/user.js";
-
+import { authenticateAdmin } from "../middleware/auth.js";
 export const userRouter = Router();
-userRouter.post("/register", UserController.create);
 userRouter.post("/logIn", UserController.logIn);
+userRouter.post("/", authenticateAdmin, UserController.create);
+
+userRouter.get("/", authenticateAdmin, UserController.getUsers);
+userRouter.delete("/:id", authenticateAdmin, UserController.delete);

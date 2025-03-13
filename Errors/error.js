@@ -1,6 +1,6 @@
 const createErrorFactory = function (ErrorName) {
   return class CustomError extends Error {
-    constructor(message, statusCode = 500, data = null) {
+    constructor(message, statusCode, data = null) {
       super(message);
       this.name = ErrorName;
       this.statusCode = statusCode;
@@ -13,3 +13,4 @@ export const ConnectionError = createErrorFactory("ConnectionError");
 export const ValidationError = createErrorFactory("ValidationError");
 export const NotFoundError = createErrorFactory("NotFoundError");
 export const UnauthorizedError = createErrorFactory("UnauthorizedError");
+export const TokenExpiredError = createErrorFactory("TokenExpiredError");
