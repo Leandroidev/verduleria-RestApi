@@ -39,6 +39,8 @@ export class UserController {
     }
   }
   static async logIn(req, res, next) {
+    console.log(req.body);
+
     try {
       const result = validateUser(req.body);
       if (result.error) {
@@ -49,7 +51,10 @@ export class UserController {
         );
       }
       const token = await UserModel.logIn({ input: result.data });
-
+      const user = {
+        token: token,
+        userName: req.body.userName,
+      };
       if (!token) {
         throw new UnauthorizedError(
           "Invalid Credential",
@@ -57,7 +62,7 @@ export class UserController {
           JSON.parse(result.message.error)
         );
       }
-      return res.json(token);
+      return res.json(user);
     } catch (error) {
       next(error);
     }

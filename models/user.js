@@ -77,10 +77,8 @@ export class UserModel {
       if (!isValidPassword) {
         throw new UnauthorizedError("Invalid username or password", 401);
       }
-      const token = jwt.sign(
-        { userId: user.id, userName: input.userName },
-        process.env.JWT_SECRET
-      );
+      const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET);
+
       return token;
     }
   }
