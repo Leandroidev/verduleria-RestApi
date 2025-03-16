@@ -13,14 +13,7 @@ export class ProductController {
       next(error);
     }
   }
-  static async getAllWId(req, res, next) {
-    try {
-      const products = await ProductModel.getAllWId();
-      return res.json(products);
-    } catch (error) {
-      next(error);
-    }
-  }
+
   static async create(req, res, next) {
     try {
       const result = validateProduct(req.body);

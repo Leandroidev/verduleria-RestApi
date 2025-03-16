@@ -1,7 +1,7 @@
 import { UnauthorizedError, ValidationError } from "../Errors/error.js";
 import { UserModel } from "../models/user.js";
 import { validateUser } from "../schemas/user.js";
-
+import { authenticateSession } from "../middleware/auth.js";
 export class UserController {
   static async getUsers(req, res, next) {
     try {
