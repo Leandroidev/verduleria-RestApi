@@ -49,9 +49,12 @@ export const authenticateSession = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.userId = decoded.userId; // Adjuntar el ID del usuario a la solicitud
+    req.logged = true;
+
     next();
   } catch (error) {
+    req.logged = false;
+
     throw new UnauthorizedError("Invalid Token", 498);
   }
 };

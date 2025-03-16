@@ -1,7 +1,6 @@
 import { UnauthorizedError, ValidationError } from "../Errors/error.js";
 import { UserModel } from "../models/user.js";
 import { validateUser } from "../schemas/user.js";
-import { authenticateSession } from "../middleware/auth.js";
 export class UserController {
   static async getUsers(req, res, next) {
     try {
@@ -39,8 +38,6 @@ export class UserController {
     }
   }
   static async logIn(req, res, next) {
-    console.log(req.body);
-
     try {
       const result = validateUser(req.body);
       if (result.error) {
@@ -66,5 +63,8 @@ export class UserController {
     } catch (error) {
       next(error);
     }
+  }
+  static async isLogged(req, res, next) {
+    return res.json({ isLogged: req.logged }); // Devuelve un objeto JSON con el estado de autenticación
   }
 }
