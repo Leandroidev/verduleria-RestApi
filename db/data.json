@@ -1,16 +1,5 @@
 [
   {
-    "id": 15,
-    "name": "Hinojo",
-    "price": 3000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 1000,
-    "category": "verduras",
-    "available": true,
-    "img": "https://images.pexels.com/photos/159357/fennel-vegetables-fennel-bulb-food-159357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
     "id": 16,
     "name": "Lechuga manteca",
     "price": 4000,
@@ -20,17 +9,6 @@
     "category": "verduras",
     "available": true,
     "img": "https://www.caserissimo.com/img/ingredientes/lechuga-manteca.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Mandioca",
-    "price": 2000,
-    "promoPrice": 0,
-    "discountPercentage": 0,
-    "weight": 3000,
-    "category": "verduras",
-    "available": true,
-    "img": "https://www.caserissimo.com/img/ingredientes/mandioca.jpg"
   },
   {
     "id": 18,

@@ -13,7 +13,10 @@ export class AdminController {
         );
       }
       const token = await AdminModel.logIn({ input: result.data });
-
+      const user = {
+        token: token,
+        userName: "owner",
+      };
       if (!token) {
         throw new UnauthorizedError(
           "Invalid Credential",
@@ -21,9 +24,12 @@ export class AdminController {
           JSON.parse(result.message.error)
         );
       }
-      return res.json(token);
+      return res.json(user);
     } catch (error) {
       next(error);
     }
+  }
+  static async isLogged(req, res) {
+    return res.json({ isLogged: req.logged }); // Devuelve un objeto JSON con el estado de autenticación
   }
 }
