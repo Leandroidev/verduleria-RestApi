@@ -5,8 +5,15 @@ import { load, save } from "../db/dbConnection.js";
 export class ProductModel {
   static async getAll() {
     const products = await load("data");
-    return products;
+    return products.products;
   }
+  static async getShop() {
+    const products = await load("data");
+    if (products.isOpen) {
+      return products.products;
+    } else return { isOpen: products.isOpen };
+  }
+
   static async create({ input }) {
     const products = await load("data");
     const newProduct = {

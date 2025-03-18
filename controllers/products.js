@@ -13,7 +13,14 @@ export class ProductController {
       next(error);
     }
   }
-
+  static async getShop(req, res, next) {
+    try {
+      const shop = await ProductModel.getAll();
+      return res.json(shop);
+    } catch (error) {
+      next(error);
+    }
+  }
   static async create(req, res, next) {
     try {
       const result = validateProduct(req.body);

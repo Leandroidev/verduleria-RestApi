@@ -8,6 +8,7 @@ export async function load(entity) {
   try {
     const filePath = dataPath(entity);
     const data = await fs.readFile(filePath, "utf-8");
+
     return JSON.parse(data);
   } catch (error) {
     throw new ConnectionError(`Failed to load ${entity} from the database`);

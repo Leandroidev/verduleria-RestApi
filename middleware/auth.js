@@ -4,20 +4,24 @@ import { UnauthorizedError } from "../Errors/error.js";
 export const authenticateUser = (req, res, next) => {
   const authHeader = req.headers.authorization;
 
+  // Si no hay encabezado de autorización o no comienza con "Bearer", pasamos al siguiente middleware/controlador
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    throw new UnauthorizedError("Invalid Token", 498);
+    return next(); // Continúa con el siguiente middleware/controlador
   }
 
   const token = authHeader.split(" ")[1];
 
   try {
+    // Verificar el token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.userId = decoded.userId; // Adjuntar el ID del usuario a la solicitud
-    next();
+    next(); // Continúa con el siguiente middleware/controlador
   } catch (error) {
-    throw new UnauthorizedError("Invalid Token", 498);
+    // Si el token es inválido, también pasamos al siguiente middleware/controlador
+    return next();
   }
 };
+
 export const authenticateAdmin = (req, res, next) => {
   const authHeader = req.headers.authorization;
 

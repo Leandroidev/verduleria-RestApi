@@ -63,10 +63,13 @@ export class UserModel {
   static async logIn({ input }) {
     //hashear el password y el username y comprararlo con el json de usuarios
     const users = await load("user");
+
     for (const user of users) {
       const userExists = await users.find(
         (user) => user.userName === input.userName
       );
+      console.log(userExists);
+
       if (!userExists) {
         throw new UnauthorizedError("Invalid username or password", 401);
       }
@@ -74,6 +77,8 @@ export class UserModel {
         input.password,
         user.password
       );
+      console.log(isValidPassword);
+
       if (!isValidPassword) {
         throw new UnauthorizedError("Invalid username or password", 401);
       }
