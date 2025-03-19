@@ -51,6 +51,7 @@ export class UserController {
       const user = {
         token: token,
         userName: req.body.userName,
+        role: "user",
       };
       if (!token) {
         throw new UnauthorizedError(

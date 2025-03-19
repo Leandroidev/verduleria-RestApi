@@ -1,126 +1,6 @@
 {
-  "isOpen": true,
+  "isOpen": false,
   "products": [
-    {
-      "id": 21,
-      "name": "Pepino",
-      "price": 2500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 1000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/pepino.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Repollo blanco/colorado",
-      "price": 4000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 1000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/repollo.jpg"
-    },
-    {
-      "id": 26,
-      "name": "Rucula",
-      "price": 2000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/rucula.jpg"
-    },
-    {
-      "id": 27,
-      "name": "Tomate Cherry",
-      "price": 3900,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 1000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/tomate-cherry.jpg"
-    },
-    {
-      "id": 28,
-      "name": "Tomate perita",
-      "price": 4000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/tomate-perita.jpg"
-    },
-    {
-      "id": 29,
-      "name": "Tomate redondo",
-      "price": 5000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/tomate-redondo.jpg"
-    },
-    {
-      "id": 30,
-      "name": "Zanahoria",
-      "price": 3000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/zanahoria.jpg"
-    },
-    {
-      "id": 31,
-      "name": "Zapallo anco",
-      "price": 1800,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/zapallo-anco.jpg"
-    },
-    {
-      "id": 32,
-      "name": "Zapallo caboutie",
-      "price": 2500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/zapallo-cabutia.jpg"
-    },
-    {
-      "id": 33,
-      "name": "Zuckinni",
-      "price": 3500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/zucchini.jpg"
-    },
-    {
-      "id": 34,
-      "name": "Banana Ecuador",
-      "price": 3900,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "frutas",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
-    },
     {
       "id": 35,
       "name": "Kiwi",
@@ -569,7 +449,8 @@
       "discountPercentage": 0,
       "category": "mayorista",
       "available": true,
-      "img": "https://images.pexels.com/photos/4197445/pexels-photo-4197445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "img": "https://images.pexels.com/photos/4197445/pexels-photo-4197445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "weight": 1000
     },
     {
       "id": 81,

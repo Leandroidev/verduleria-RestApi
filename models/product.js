@@ -6,16 +6,17 @@ export class ProductModel {
   static async getAll() {
     const data = await load("data");
 
-    const products = data.products;
+    const products = data;
     return products;
   }
   static async getShop() {
     const data = await load("data");
 
-    const shop = data.isOpen;
-    if (shop) {
-      return data.products;
-    } else return shop;
+    if (data.isOpen) return data;
+    if (!data.isOpen) {
+      const auxData = { isOpen: data.isOpen, products: [] };
+      return auxData;
+    }
   }
 
   static async create({ input }) {

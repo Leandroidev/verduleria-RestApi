@@ -20,6 +20,3 @@ app.use("/products", productsRouter);
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.use(errorHandler);
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});

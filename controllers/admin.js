@@ -16,6 +16,7 @@ export class AdminController {
       const user = {
         token: token,
         userName: "owner",
+        role: "owner",
       };
       if (!token) {
         throw new UnauthorizedError(
@@ -30,6 +31,6 @@ export class AdminController {
     }
   }
   static async isLogged(req, res) {
-    return res.json({ isLogged: req.logged }); // Devuelve un objeto JSON con el estado de autenticación
+    return res.json({ isLogged: req.logged, role: "owner" }); // Devuelve un objeto JSON con el estado de autenticación
   }
 }

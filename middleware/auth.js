@@ -2,8 +2,6 @@ import jwt from "jsonwebtoken";
 import { UnauthorizedError } from "../Errors/error.js";
 
 export const authenticateUser = (req, res, next) => {
-  console.log("autenticando");
-
   const authHeader = req.headers.authorization;
 
   // Si no hay encabezado de autorización o no comienza con "Bearer", pasamos al siguiente middleware/controlador
