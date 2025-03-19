@@ -8,5 +8,10 @@
     "id": "ec80269c-3ecc-499c-809c-b3ab44d07647",
     "userName": "admin1",
     "password": "$2b$10$iWk7vVJ84Qu2LBh0BAN21eUuH2WfrVa2j//SdLiTnaorHO1PWQ4Fm"
+  },
+  {
+    "id": "b615fd39-34b0-456f-abfc-df91ff96b1ce",
+    "userName": "asd",
+    "password": "$2b$10$3Rtj6tmJIu4HnjNaitNcXO1.8sd86mK6rEUt2rQ8G2Xt2D7Yfry.G"
   }
 ]

@@ -6,6 +6,8 @@ import {
 import { ValidationError } from "../Errors/error.js";
 export class ProductController {
   static async getAll(req, res, next) {
+    console.log("GetAll");
+
     try {
       const products = await ProductModel.getAll();
       return res.json(products);
@@ -14,8 +16,10 @@ export class ProductController {
     }
   }
   static async getShop(req, res, next) {
+    console.log("GetShop");
+
     try {
-      const shop = await ProductModel.getAll();
+      const shop = await ProductModel.getShop();
       return res.json(shop);
     } catch (error) {
       next(error);

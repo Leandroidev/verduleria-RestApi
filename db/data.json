@@ -2,50 +2,6 @@
   "isOpen": true,
   "products": [
     {
-      "id": 16,
-      "name": "Lechuga manteca",
-      "price": 4000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/lechuga-manteca.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Morron rojo",
-      "price": 5000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 1000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/morron-rojo.jpg"
-    },
-    {
-      "id": 19,
-      "name": "Morron verde",
-      "price": 3000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 1000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/morron-verde.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Papa",
-      "price": 7000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 8000,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/papa.jpg"
-    },
-    {
       "id": 21,
       "name": "Pepino",
       "price": 2500,
@@ -55,39 +11,6 @@
       "category": "verduras",
       "available": true,
       "img": "https://www.caserissimo.com/img/ingredientes/pepino.jpg"
-    },
-    {
-      "id": 22,
-      "name": "modificado",
-      "price": 5000,
-      "promoPrice": 10,
-      "discountPercentage": null,
-      "weight": 1200,
-      "category": "verduras",
-      "available": false,
-      "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg"
-    },
-    {
-      "id": 23,
-      "name": "modificado",
-      "price": 2500,
-      "promoPrice": 10,
-      "discountPercentage": 0,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg",
-      "weight": 1200
-    },
-    {
-      "id": 24,
-      "name": "modificado",
-      "price": 10,
-      "promoPrice": 9,
-      "discountPercentage": 9.999999999999998,
-      "category": "verduras",
-      "available": true,
-      "img": "https://www.eltiempo.com/files/article_content/uploads/2019/08/27/5d65a4c5b5f5e.jpeg",
-      "weight": 1200
     },
     {
       "id": 25,
@@ -353,16 +276,6 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Pomelo.jpg"
     },
     {
-      "id": 49,
-      "name": "Aceite de oliva virgen extra mendocino",
-      "price": 13000,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "category": "envasados",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Olive_oil.jpg"
-    },
-    {
       "id": 50,
       "name": "Aceite de coco neutro Kos Food",
       "price": 6900,
@@ -371,37 +284,6 @@
       "category": "envasados",
       "available": true,
       "img": "https://upload.wikimedia.org/wikipedia/commons/0/06/Coconut_oil.jpg"
-    },
-    {
-      "id": 51,
-      "name": "Bandeja de champiñones",
-      "price": 3500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "category": "envasados",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Button_mushrooms.jpg"
-    },
-    {
-      "id": 52,
-      "name": "Brote de soja",
-      "price": 2500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "category": "envasados",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bean_sprouts.JPG"
-    },
-    {
-      "id": 53,
-      "name": "Condimento ají molido",
-      "price": 500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 50,
-      "category": "envasados",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/28/Chili_peppers.jpg"
     },
     {
       "id": 54,

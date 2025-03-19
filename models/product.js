@@ -4,18 +4,22 @@ import { NotFoundError, ValidationError } from "../Errors/error.js";
 import { load, save } from "../db/dbConnection.js";
 export class ProductModel {
   static async getAll() {
-    const products = await load("data");
-    return products.products;
+    const data = await load("data");
+
+    const products = data.products;
+    return products;
   }
   static async getShop() {
-    const products = await load("data");
-    if (products.isOpen) {
-      return products.products;
-    } else return { isOpen: products.isOpen };
+    const data = await load("data");
+
+    const shop = data.isOpen;
+    if (shop) {
+      return data.products;
+    } else return shop;
   }
 
   static async create({ input }) {
-    const products = await load("data");
+    const data = await load("data");
     const newProduct = {
       id: randomUUID(),
       ...input,
@@ -25,31 +29,32 @@ export class ProductModel {
     }
     calculateDiscount(newProduct);
 
-    products.push(newProduct);
-    await save("data", products);
+    data.products.push(newProduct);
+    await save("data", data);
     return newProduct;
   }
   static async delete({ id }) {
-    const products = await load("data");
-    const productIndex = products.findIndex((product) => product.id == id);
+    const data = await load("data");
+
+    const productIndex = data.products.findIndex((product) => product.id == id);
     if (productIndex === -1) {
       throw new NotFoundError("Product not found", 404);
     }
-    const deletedProduct = products[productIndex];
-    products.splice(productIndex, 1);
-    await save("data", products);
+    const deletedProduct = data.products[productIndex];
+    data.products.splice(productIndex, 1);
+    await save("data", data);
     return deletedProduct;
   }
   static async update({ id, input }) {
-    const products = await load("data");
+    const data = await load("data");
 
-    const productIndex = products.findIndex((product) => product.id == id);
+    const productIndex = data.products.findIndex((product) => product.id == id);
     if (productIndex === -1) {
       throw new NotFoundError("Product not found", 404);
     }
 
     const updatedProduct = {
-      ...products[productIndex],
+      ...data.products[productIndex],
       ...input,
     };
     if (!validateDiscount(updatedProduct)) {
@@ -57,9 +62,9 @@ export class ProductModel {
     }
     calculateDiscount(updatedProduct);
 
-    products[productIndex] = updatedProduct;
+    data.products[productIndex] = updatedProduct;
 
-    await save("data", products);
+    await save("data", data);
     return updatedProduct;
   }
 }

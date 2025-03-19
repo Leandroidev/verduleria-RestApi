@@ -65,6 +65,6 @@ export class UserController {
     }
   }
   static async isLogged(req, res, next) {
-    return res.json({ isLogged: req.logged }); // Devuelve un objeto JSON con el estado de autenticación
+    return res.json({ isLogged: req.logged, role: "user" }); // Devuelve un objeto JSON con el estado de autenticación
   }
 }

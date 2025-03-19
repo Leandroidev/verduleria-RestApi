@@ -68,7 +68,6 @@ export class UserModel {
       const userExists = await users.find(
         (user) => user.userName === input.userName
       );
-      console.log(userExists);
 
       if (!userExists) {
         throw new UnauthorizedError("Invalid username or password", 401);
@@ -77,7 +76,6 @@ export class UserModel {
         input.password,
         user.password
       );
-      console.log(isValidPassword);
 
       if (!isValidPassword) {
         throw new UnauthorizedError("Invalid username or password", 401);
