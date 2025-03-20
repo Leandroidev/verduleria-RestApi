@@ -3,47 +3,47 @@
   "products": [
     {
       "id": 35,
-      "name": "Kiwiii",
+      "name": "Kiwi",
       "price": 3900,
-      "promoPrice": 10,
-      "discountPercentage": 99.74358974358975,
-      "weight": 1000,
+      "promoPrice": 2300,
+      "discountPercentage": 0,
+      "weight": 1500,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_fruit_in_section.jpg"
+      "img": "https://img.freepik.com/foto-gratis/primer-plano-sabroso-kiwi-fondo-blanco_1112-453.jpg?semt=ais_hybrid"
     },
     {
       "id": 36,
       "name": "Kinoto",
       "price": 3000,
       "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 2000,
+      "discountPercentage": 50,
+      "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kumquats.jpg"
+      "img": "https://img.freepik.com/foto-gratis/cerezas-amarillas-frescas-suaves-jugosas-dentro-placa-azul-madera-marron-fruta-fresca-madura_140725-32245.jpg?semt=ais_hybrid"
     },
     {
       "id": 38,
       "name": "Mandarina dancy",
       "price": 2500,
       "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
+      "discountPercentage": 5,
+      "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/88/Mandarina_Citrus_reticulata.jpg"
+      "img": "https://img.freepik.com/foto-gratis/mandarina-aislado-sobre-fondo-blanco_93675-131040.jpg?semt=ais_hybrid"
     },
     {
       "id": 39,
-      "name": "Mandarina ellendale",
+      "name": "Sandia",
       "price": 2500,
       "promoPrice": 0,
       "discountPercentage": 0,
       "weight": 4000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Tangerines.jpg"
+      "img": "https://img.freepik.com/foto-gratis/sandia-entera-dulce-sobre-fondo-azul_23-2148134949.jpg?semt=ais_hybrid"
     },
     {
       "id": 40,
@@ -54,7 +54,7 @@
       "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Mangoes.jpg"
+      "img": "https://img.freepik.com/foto-gratis/fruta-mango-aislada-sobre-blanco_171337-11082.jpg?semt=ais_hybrid"
     },
     {
       "id": 41,
@@ -65,18 +65,18 @@
       "weight": 3000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+      "img": "https://img.freepik.com/foto-gratis/dos-manzanas-rojas-aisladas-blanco_114579-73124.jpg?semt=ais_hybrid"
     },
     {
       "id": 42,
-      "name": "Manzana selección",
+      "name": "Anana",
       "price": 6000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 10,
       "weight": 2000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+      "img": "https://img.freepik.com/foto-gratis/fruta-pina_1203-7746.jpg?semt=ais_hybrid"
     },
     {
       "id": 43,
@@ -87,7 +87,7 @@
       "weight": 3000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Granny_smith_and_cross_section.jpg"
+      "img": "https://img.freepik.com/foto-gratis/manzana-verde-aislada-blanco_2829-9403.jpg?semt=ais_hybrid"
     },
     {
       "id": 44,
@@ -98,51 +98,51 @@
       "weight": 4000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/43/Ambersweet_oranges.jpg"
+      "img": "https://img.freepik.com/foto-gratis/jugosa-naranja-circulo-citricos-maduros_1172-203.jpg?semt=ais_hybrid"
     },
     {
       "id": 45,
-      "name": "Naranja ombligo",
+      "name": "Banana",
       "price": 2500,
       "promoPrice": 0,
       "discountPercentage": 0,
-      "weight": 3000,
+      "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Navel_oranges.jpg"
+      "img": "https://img.freepik.com/foto-gratis/platanos-fondo-blanco_1187-1671.jpg?semt=ais_hybrid"
     },
     {
       "id": 46,
       "name": "Palta",
       "price": 6000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 10,
       "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Avocado.jpg"
+      "img": "https://img.freepik.com/foto-gratis/buen-alimento-defensas-contra-enfermedades_23-2149165826.jpg?semt=ais_hybrid"
     },
     {
       "id": 47,
       "name": "Pera",
       "price": 3500,
       "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
+      "discountPercentage": 5,
+      "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Pears.jpg"
+      "img": "https://img.freepik.com/foto-gratis/peras-deliciosas_1203-1840.jpg?semt=ais_hybrid"
     },
     {
       "id": 48,
       "name": "Pomelo",
       "price": 2000,
       "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
+      "discountPercentage": 10,
+      "weight": 1000,
       "category": "frutas",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Pomelo.jpg"
+      "img": "https://img.freepik.com/foto-gratis/pomelo-fresco-aislado-superficie-blanca_114579-64461.jpg?semt=ais_hybrid"
     },
     {
       "id": 50,
@@ -151,181 +151,185 @@
       "promoPrice": 0,
       "discountPercentage": 0,
       "category": "envasados",
+      "weight": 850,
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/06/Coconut_oil.jpg"
+      "img": "https://img.freepik.com/foto-gratis/primer-plano-aceite-coco-transparente_23-2148337484.jpg?semt=ais_hybrid"
     },
     {
       "id": 54,
       "name": "Condimento chimichurri",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "weight": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Chimichurri_sauce.jpg"
+      "img": "https://img.freepik.com/foto-gratis/salsa-chimichurri-verde-mesa-madera_123827-30401.jpg?t=st=1742476345~exp=1742479945~hmac=44ee7bc363f9a86c2b20ca96ab71adf60dba6990bfc912664fe5ea71d5faac28&w=740"
     },
     {
       "id": 55,
       "name": "Condimento cúrcuma",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "weight": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/89/Turmeric_powder.jpg"
+      "img": "https://img.freepik.com/foto-gratis/curcuma-polvo_1323-401.jpg?semt=ais_hybrid"
     },
     {
       "id": 56,
       "name": "Condimento orégano",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "weight": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Oregano.jpg"
+      "img": "https://img.freepik.com/foto-gratis/oregano-cuchara-madera_1339-185.jpg?semt=ais_hybrid"
     },
     {
       "id": 57,
       "name": "Condimento pimentón ahumado",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "weight": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Smoked_paprika.jpg"
+      "img": "https://img.freepik.com/foto-gratis/foto-vertical-aji-rojo-caliente-sobre-tabla-madera_114579-68671.jpg?semt=ais_hybrid"
     },
     {
       "id": 58,
-      "name": "Condimento pimentón dulce",
+      "name": "Pimienta",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "weight": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Paprika_dolce.jpg"
+      "img": "https://img.freepik.com/foto-gratis/pimientos-negros_1339-198.jpg?semt=ais_hybrid"
     },
     {
       "id": 59,
-      "name": "Condimento pizza",
+      "name": "Nueces",
       "price": 500,
       "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 50,
+      "discountPercentage": 10,
+      "weight": 500,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Italian_pizza_herbs.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vista-superior-nueces-tazon-rustico_141793-6324.jpg?semt=ais_hybrid"
     },
     {
       "id": 60,
-      "name": "Dulce de cayote",
+      "name": "Sal",
       "price": 7000,
       "promoPrice": 0,
       "discountPercentage": 0,
       "weight": 800,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Candied_pumpkin.jpg"
+      "img": "https://img.freepik.com/psd-gratis/cuenco-sal-madera-cuchara-madera_191095-81771.jpg?semt=ais_hybrid"
     },
     {
       "id": 61,
       "name": "Maní",
       "price": 3000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 30,
       "weight": 400,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Peanuts.jpg"
+      "img": "https://img.freepik.com/foto-gratis/cacahuetes-pelados-levitan-sobre-fondo-blanco_485709-39.jpg?semt=ais_hybrid"
     },
     {
       "id": 62,
       "name": "Mermelada El Celta frutilla",
       "price": 3500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "weight": 730,
+      "discountPercentage": 15,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Strawberry_jam.jpg"
+      "img": "https://img.freepik.com/foto-gratis/mermelada-fresa-sobre-fondo-oscuro-antiguo_1150-37972.jpg?semt=ais_hybrid"
     },
     {
       "id": 63,
-      "name": "Mermelada El Celta frutilla light",
+      "name": "Mermelada El Celta Naranja",
       "price": 3500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 20,
+      "weight": 730,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Strawberry_jam.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vista-superior-mermelada-naranja_23-2148738043.jpg?semt=ais_hybrid"
     },
     {
       "id": 64,
       "name": "Mermelada El Celta frutos del bosque",
       "price": 3500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 20,
+      "weight": 730,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mixed_berry_jam.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vista-superior-mermelada-casera-jugosa-fresca_23-2148525237.jpg?semt=ais_hybrid"
     },
     {
       "id": 65,
-      "name": "Miel multifloral plástico",
+      "name": "Miel",
       "price": 3400,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 10,
       "weight": 500,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Acacia_honey.jpg"
+      "img": "https://img.freepik.com/foto-gratis/mano-que-sostiene-cucharon-miel-madera-tarro-miel_23-2149442336.jpg?semt=ais_hybrid"
     },
     {
       "id": 66,
-      "name": "Miel pura vidrio",
+      "name": "Miel panal",
       "price": 4500,
       "promoPrice": 0,
       "discountPercentage": 0,
       "weight": 500,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Honey_jar.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vista-superior-panal-cera-abejas-miel_23-2149442346.jpg?semt=ais_hybrid"
     },
     {
       "id": 67,
       "name": "Mix de granola Kos Food",
       "price": 6900,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 10,
       "weight": 1000,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/Granola.jpg"
+      "img": "https://img.freepik.com/foto-gratis/muesli_1368-8927.jpg?semt=ais_hybrid"
     },
     {
       "id": 68,
-      "name": "Nuez con cáscara",
+      "name": "Cilantro",
       "price": 5500,
       "promoPrice": 0,
       "discountPercentage": 0,
       "weight": 1000,
-      "category": "envasados",
+      "category": "verduras",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Walnut.jpg"
+      "img": "https://img.freepik.com/foto-gratis/hoja-organica-fresca-especias-vegetariana_1203-5927.jpg?semt=ais_hybrid"
     },
     {
       "id": 69,
-      "name": "Nuez pelada mariposa",
+      "name": "Pistacho",
       "price": 2200,
       "promoPrice": 0,
       "discountPercentage": 0,
-      "weight": 120,
+      "weight": 500,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Walnut_kernels.jpg"
+      "img": "https://img.freepik.com/foto-gratis/cerca-textura-pistacho_53876-47166.jpg?semt=ais_hybrid"
     },
     {
       "id": 70,
@@ -333,10 +337,10 @@
       "price": 1200,
       "promoPrice": 0,
       "discountPercentage": 0,
-      "weight": 190,
+      "weight": 350,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Raisins.jpg"
+      "img": "https://img.freepik.com/foto-gratis/pasas-secadas_1368-9147.jpg?semt=ais_hybrid"
     },
     {
       "id": 71,
@@ -344,39 +348,32 @@
       "price": 2500,
       "promoPrice": 0,
       "discountPercentage": 0,
+      "weight": 1000,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Garlic_paste.jpg"
+      "img": "https://img.freepik.com/foto-gratis/ajo-crudo-fresco-listo-cocinar_1150-42642.jpg?semt=ais_hybrid"
     },
     {
       "id": 72,
-      "name": "Pasta de ajo mediterránea sabor albahaca",
+      "name": "Azucar",
       "price": 2500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 20,
+      "weight": 1000,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Garlic_paste.jpg"
-    },
-    {
-      "id": 73,
-      "name": "Pasta de Mani sin azúcar Kos Food",
-      "price": 5900,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "category": "envasados",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Peanut_butter.jpg"
+      "img": "https://img.freepik.com/foto-gratis/dia-mundial-diabetes-azucar-tazon-madera-sobre-superficie-oscura_1150-26666.jpg?semt=ais_hybrid"
     },
     {
       "id": 74,
-      "name": "Jugo de arándanos",
+      "name": "Fideos",
       "price": 3000,
       "promoPrice": 0,
       "discountPercentage": 0,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Blueberry_juice.jpg"
+      "weight": 500,
+      "img": "https://img.freepik.com/foto-gratis/pastas-sobre-negro-paquete-arpillera_114579-16941.jpg?semt=ais_hybrid"
     },
     {
       "id": 75,
@@ -384,19 +381,21 @@
       "price": 4900,
       "promoPrice": 0,
       "discountPercentage": 0,
+      "weight": 1500,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tomato_sauce.jpg"
+      "img": "https://img.freepik.com/foto-gratis/salsa-tomate-ajo-hojas-verdes-vibrantes-planta-perejil-italiano_1150-37832.jpg?semt=ais_hybrid"
     },
     {
       "id": 76,
-      "name": "Salsa de tomate CHICA",
+      "name": "Harina",
       "price": 4000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "weight": 1000,
+      "discountPercentage": 50,
       "category": "envasados",
       "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tomato_sauce.jpg"
+      "img": "https://img.freepik.com/foto-gratis/harina-escondida-utilizada-cocinar_23-2149517214.jpg?semt=ais_hybrid"
     },
     {
       "id": 77,
@@ -407,38 +406,39 @@
       "weight": 4000,
       "category": "verduras",
       "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/papa.jpg"
+      "img": "https://img.freepik.com/foto-gratis/patatas-otono-dieta-negro-nutricion_1203-6025.jpg?semt=ais_hybrid"
     },
     {
       "id": 78,
-      "name": "Papa",
+      "name": "Calabaza",
       "price": 15000,
       "promoPrice": 0,
       "discountPercentage": 0,
       "category": "mayorista",
       "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/papa.jpg"
+      "weight": 1000,
+      "img": "https://img.freepik.com/foto-gratis/calabaza-fresca_1339-282.jpg?semt=ais_hybrid"
     },
     {
       "id": 79,
       "name": "Coliflor",
       "price": 3500,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 15,
       "weight": 1000,
       "category": "verduras",
       "available": true,
-      "img": "https://images.pexels.com/photos/4963827/pexels-photo-4963827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "img": "https://img.freepik.com/foto-gratis/coliflores-aisladas_74190-3389.jpg?semt=ais_hybrid"
     },
     {
       "id": 80,
       "name": "Cebolla",
       "price": 25000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 5,
       "category": "mayorista",
       "available": true,
-      "img": "https://images.pexels.com/photos/4197445/pexels-photo-4197445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img": "https://img.freepik.com/foto-gratis/cebolla_74190-2835.jpg?semt=ais_hybrid",
       "weight": 1000
     },
     {
@@ -446,31 +446,33 @@
       "name": "Espinaca",
       "price": 7000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 30,
+      "weight": 1000,
       "category": "mayorista",
       "available": true,
-      "img": "https://images.pexels.com/photos/8852027/pexels-photo-8852027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "img": "https://img.freepik.com/foto-gratis/fondo-natural-hojas-espinacas-baby-verdes-frescas_169016-27568.jpg?semt=ais_hybrid"
     },
     {
       "id": 82,
       "name": "Lechuga manteca",
       "price": 2000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "discountPercentage": 15,
       "weight": 1000,
       "category": "verduras",
       "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/lechuga-manteca.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vehiculo-verde-fresca-natural-saludable_1203-5946.jpg?semt=ais_hybrid"
     },
     {
       "id": 83,
       "name": "Zapallo anco",
       "price": 8000,
       "promoPrice": 0,
-      "discountPercentage": 0,
+      "weight": 1000,
+      "discountPercentage": 15,
       "category": "mayorista",
       "available": true,
-      "img": "https://www.caserissimo.com/img/ingredientes/zapallo-anco.jpg"
+      "img": "https://img.freepik.com/foto-gratis/vista-superior-composicion-calabaza-mitad_23-2148634441.jpg?semt=ais_hybrid"
     }
   ]
 }
