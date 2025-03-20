@@ -3,10 +3,10 @@
   "products": [
     {
       "id": 35,
-      "name": "Kiwi",
+      "name": "Kiwiii",
       "price": 3900,
-      "promoPrice": 0,
-      "discountPercentage": 0,
+      "promoPrice": 10,
+      "discountPercentage": 99.74358974358975,
       "weight": 1000,
       "category": "frutas",
       "available": true,
@@ -22,17 +22,6 @@
       "category": "frutas",
       "available": true,
       "img": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kumquats.jpg"
-    },
-    {
-      "id": 37,
-      "name": "Limón",
-      "price": 1500,
-      "promoPrice": 0,
-      "discountPercentage": 0,
-      "weight": 3000,
-      "category": "frutas",
-      "available": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lemons_and_lime.jpg"
     },
     {
       "id": 38,

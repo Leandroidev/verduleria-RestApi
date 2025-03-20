@@ -1,58 +1,55 @@
-# :tomato: Verduleria RestApi
-
-## [IR AL PROYECTO ONLINE (desplegado en render)](https://brilliant-conkies-4ca1b8.netlify.app)
-
-### Descripción del Proyecto
-
-El frontend de **Verduleria de Lea** es una interfaz interactiva y funcional para la gestión de mercaderia y el control de una verduleria . Está diseñada para proporcionar una experiencia de usuario intuitiva, adaptándose tanto a usuarios finales como a administradores/empleados. Este proyecto utiliza **React.js** junto con **Context API** para una gestión eficiente del estado global y ofrece una interfaz moderna, responsiva y dinámica. Ademas de utilizar **Reducer** para manejar el estado del carrito e implementa **Local Storage** para la persistencia de productos y usuarios, gestiona sus peticiones a la APi
-con **Axios**.
+# :tomato: Verduleria BackEnd
 
 ---
 
-### Funcionalidades Principales
-
-#### Rutas (las mas relevantes)
-
-- **/Productos**: Lleva a la lista de productos o paneles de administrador si se encuentra logeado
-- **/admin/logIn**: a esta ruta se accede manteniendo 3 segundos el click sobre el logo de la navbar y permite autentificar como dueño (**User**:userAdmin, **Password**:userPassword)
-- **/logIn**: permite el logeo como administrador (**User**:admin, **Password**:admin) se accede dando 3 clicks consecutivos en el logo de la navbar
-
-#### **1. Gestión de Productos**
-
-- **Visualización de Productos:**
-  - Los usuarios pueden navegar y explorar los productos disponibles. Ademas de cargarlos a su carrito para posteriormente enviarlos por WhatsApp
-- **CRUD Completo (Productos):**
-  - Crear, Editar y Eliminar productos directamente desde la interfaz. Siempre y cuando se tengan privilegios de "dueño" o "administrador"
-- **Read Create Delete (administradores):**
-  - Lista, crea y borra usuarios, siempre y cuando se tengan privilegios de "dueño"
-- **Filtrado Dinámico:**
-  - Búsqueda y filtrado de productos según categorías y atributos.
-
-#### **2. Estado del Local (Shop)**
-
-- **Alternar Estado de Apertura/Cierre:**
-  - Botón dinámico que permite a los administradores abrir o cerrar el local.
-  - Cambios reflejados visualmente y sincronizados con el backend.
-- **Pantalla de Local Cerrado:**
-  - Si el local está cerrado, los usuarios finales ven un mensaje claro indicando el estado.
-
-#### **3. Roles de Usuarios**
-
-- **Diferenciación de Roles:**
-  - El dueño tiene acceso a todas las herramientas.
-  - Los administradores tienen acceso a herramientas de gestion de mercaderia y cierre/apertura del local.
-  - Los usuarios finales solo ven los productos disponibles y no pueden realizar cambios, solo agregar productos al carrito.
-
-#### **4. Interfaz Amigable**
-
-- **Popups Interactivos:**
-  - Modales para la creación y edición de productos con validación de formularios.
-- **Indicadores Visuales:**
-  - Colores dinámicos en los botones para reflejar el estado actual del local (verde para abierto, rojo para cerrado).
-- **Diseño Responsivo:**
-  - Adaptado para funcionar en diferentes tamaños de pantalla, desde móviles hasta escritorio.
+## [IR AL PROYECTO ONLINE (desplegado en Render)](https://verduleria-restapi.onrender.com/products)
 
 ---
+
+## [Conoce el FrontEnd del proyecto](https://github.com/Leandroidev/verduleria)
+
+---
+
+## Descripción del Proyecto
+
+El back-end de **Verdulería de lea** fue planteado como una **Rest API** y se implementó el **modelo MVC** para patrón de diseño. Conecta al back y al front a través de peticiones http. Se utilizó **Express** para el manejo de las solicitudes HTTP, **Zod** para validaciones y **JWT** para las autenticaciones y autorizaciones de administradores/dueño, además de **hashear** información relevante con **Bcrypt**. Se creó una factoría para crear el set de errores personalizados y asi tener mejor control sobre los mismos.
+
+---
+
+## Variables de entorno
+
+```javascript
+JWT_SECRET = claveSuperSecreta;
+ADMIN_USER = usuarioDelAdministrador;
+ADMIN_PASSWORD = passwordDelAdministrador;
+```
+
+## Funcionalidades Principales
+
+### Rutas
+
+| RUTA                 | VERBO  | DESCRIPCIÓN                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /products            | GET    | Obtiene los productos y el estado de la tienda. Si la tienda está cerrada y el token no es de administrador, devuelve un array vacío de productos. Si el token es válido, devuelve todos los productos existentes:`{ "isOpen": false, "products": [] }`                                                                                                                                                                                                          |
+| /products            | CREATE | Crea un recurso `product` con los valores enviados en el body, verificando sesión y validando los datos. Devuelve el recurso creado. Calcula automáticamente `promoPrice` o `discountPercentage` si alguno es 0. Ejemplo:<br>`{ "id": 37, "name": "Limón", "price": 1500, "promoPrice": 0, "discountPercentage": 0, "weight": 3000, "category": "frutas", "available": true, "img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lemons_and_lime.jpg" }` |
+| /products/:id        | DELETE | Borra el recurso `product` correspondiente al id proporcionado en params. Devuelve el recurso eliminado:<br>`{ "id": 37, "name": "Limón", "price": 1500, "promoPrice": 0, "discountPercentage": 0, "weight": 3000, "category": "frutas", "available": true, "img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lemons_and_lime.jpg" }`                                                                                                                  |
+| /products/:id        | PATCH  | Modifica el recurso `product` correspondiente al id proporcionado en params. Mantiene inmutados los campos no modificados y devuelve el recurso actualizado:<br>`{ "id": 37, "name": "Limón", "price": 1500, "promoPrice": 0, "discountPercentage": 0, "weight": 3000, "category": "frutas", "available": true, "img": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lemons_and_lime.jpg" }`                                                              |
+| /user                | GET    | Obtiene un array del recurso `user`. Solo tiene autorización el administrador. Ejemplo de respuesta:<br>`[ { "id": "aad74ca8-1d4b-47eb-8d70-ee61efd8bd1c", "userName": "admin" }, { "id": "c3f805e6-3be3-411d-b160-30496db34fa9", "userName": "admin1" } ]`                                                                                                                                                                                                      |
+| /user                | CREATE | Crea un recurso `user` con los valores enviados en el body. Solo tiene autorización el administrador. Devuelve el id del usuario creado:<br>`"98a0f243-6e21-4934-a39e-f3ef6316f34d"`                                                                                                                                                                                                                                                                             |
+| /user/:id            | DELETE | Borra el recurso `user` correspondiente al id proporcionado en params. Solo tiene autorización el administrador. Devuelve el usuario eliminado:<br>`{ "id": "98a0f243-6e21-4934-a39e-f3ef6316f34d", "userName": "admin11" }`                                                                                                                                                                                                                                     |
+| /user/logIn          | POST   | Logea un usuario verificando los campos enviados en el body. Si es exitoso, devuelve un objeto con algunos datos del usuario:<br>`{ "token": "un token de JWT", "userName": "owner", "role": "owner" }`                                                                                                                                                                                                                                                          |
+| /user/sessionActive  | POST   | Verifica el token enviado por Bearer Token. Si es válido, devuelve el rol del usuario y su estado de sesión:<br>`{ "isLogged": true, "role": "user" }`                                                                                                                                                                                                                                                                                                           |
+| /shop                | POST   | Alterna el estado `isOpen` de la tienda al recibir un token válido. Devuelve lo mismo que `GET /products` con un token válido.                                                                                                                                                                                                                                                                                                                                   |
+| /admin/logIn         | POST   | Endpoint para inicio de sesión del administrador (detalles no proporcionados).                                                                                                                                                                                                                                                                                                                                                                                   |
+| /admin/sessionActive | POST   | Similar a `/user/sessionActive`, pero verifica que el token sea válido como administrador y devuelve el rol `"owner"`.                                                                                                                                                                                                                                                                                                                                           |
+
+### Posibles Errores
+
+- **ConnectionError = Error en la conexion a la base de datos**
+- **ValidationError = Error de validacion en campos**
+- **NotFoundError = Error para recurso no encontrado**
+- **UnauthorizedError = Error para usuario no autorizado**
+- **TokenExpiredError = Error para token expirado**
 
 ### Tecnologías Utilizadas
 
@@ -64,13 +61,3 @@ con **Axios**.
   - Context API.
 - **Estilizado:**
   - CSS Modules y estilos personalizados.
-
----
-
-### [Conoce la RESTAPI del proyecto](https://github.com/Leandroidev/verduleria-RestApi)
-
-### Pendientes
-
-- **Verificar datos del formulario en CreatePopUp**
-- **Conectar con WebSockets para una experiencia en tiempo real**
-- **Configurar el envio de mensajeria con los pedidos**

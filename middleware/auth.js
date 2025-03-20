@@ -6,7 +6,11 @@ export const authenticateUser = (req, res, next) => {
 
   // Si no hay encabezado de autorización o no comienza con "Bearer", pasamos al siguiente middleware/controlador
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    return next();
+    if (req.originalUrl == "/products" && req.method == "GET") {
+      return next();
+    } else {
+      throw new UnauthorizedError("Invalid Token", 498);
+    }
   }
 
   const token = authHeader.split(" ")[1];

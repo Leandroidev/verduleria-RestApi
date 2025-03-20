@@ -10,7 +10,6 @@ productsRouter.get("/", authenticateUser, (req, res, next) => {
     return ProductController.getShop(req, res, next);
   }
 });
-productsRouter.get("/", ProductController.getShop);
 productsRouter.post("/", authenticateUser, ProductController.create);
 productsRouter.delete("/:id", authenticateUser, ProductController.delete);
 productsRouter.patch("/:id", authenticateUser, ProductController.update);
