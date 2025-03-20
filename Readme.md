@@ -54,10 +54,7 @@ ADMIN_PASSWORD = passwordDelAdministrador;
 ### Tecnologías Utilizadas
 
 - **Librerías y Frameworks:**
-  - Axios (para el manejo de peticiones)
-  - React.js
-  - React Router DOM (para manejo de rutas).
-- **Gestión de Estado:**
-  - Context API.
-- **Estilizado:**
-  - CSS Modules y estilos personalizados.
+  - Zod (para validacion y definicion de schema)
+  - Json Web Token JWT (para verificacion)
+  - Bcrypt (para encriptar datos).
+  - Express
